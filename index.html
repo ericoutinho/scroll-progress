@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        html, body {
+            background-color: #efefef;
+            color: #444;
+            height: 100%;
+        }
+
+        body {
+            padding-top: calc(7rem + 4px);
+        }
+
+        header {
+            position: fixed;
+            top: 0; left: 0;
+            background-color: #fff;
+            width: 100%;
+            padding-top: 1rem;
+        }
+
+        header h1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .progress {
+            background-color: #ddd;
+            width: 100%;
+            height: 4px;
+        }
+
+        .progress__indicator {
+            width: 0;
+            height: 4px;
+            background-image: linear-gradient(to right, yellow, coral);
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        section .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section p {
+            font-size: .8rem;
+            line-height: 1.5rem;
+            word-spacing: .1em;
+            letter-spacing: .05em;
+        }
+
+        section p:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scroll Progress</h1>
+        <div class="progress">
+            <div class="progress__indicator"></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum similique commodi ab, qui necessitatibus fugit odit ad natus iure minima dolorem officia vel, vero esse eaque rerum laboriosam accusamus.</span><span>Sunt cum unde omnis illum excepturi eos ab? Quisquam excepturi odio dolorem molestiae temporibus maxime sequi dignissimos atque enim neque adipisci praesentium aliquam doloremque nulla harum id, quis esse officia.</span><span>Recusandae ea tenetur repellendus minus iste, quam alias hic labore quas commodi quia saepe libero expedita enim sequi. Harum totam fugit dolorem temporibus iusto tempora similique eveniet modi nemo est!</span><span>Autem accusamus facilis facere necessitatibus porro iusto impedit doloribus repellat dicta non libero itaque hic accusantium doloremque id, vero aut rem aliquid ducimus cum dolor? Debitis commodi doloremque blanditiis illo.</span><span>At, dolor. Exercitationem maxime ad amet odio aliquam reiciendis debitis architecto, perferendis voluptates dolore harum corrupti natus necessitatibus veritatis reprehenderit soluta eius libero tempora omnis vitae eveniet aspernatur! Quidem, mollitia!</span></p>
+        </div>
+    </section>
+
+    <script>
+
+        window.addEventListener("scroll", scrollProgress);
+
+        function scrollProgress () {
+            // início do documento
+            let documentTop    = document.documentElement.scrollTop;
+            // posição atual da rolagem
+            let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            // percentual de rolagem
+            let progress       = (documentTop / documentHeight) * 100;
+
+            document.querySelector(".progress__indicator").style.width = `${progress}%`;
+        }
+
+    </script>
+</body>
+</html>
